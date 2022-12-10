@@ -1,0 +1,151 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;800;900&display=swap');
+/* global styling */
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color: #F9FAFB;
+}
+main {
+    width: 445px;
+    margin: 0 auto;
+}
+/* heading styling */
+main h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 87px;
+    color: #E2E8F0;
+    margin: 35px 0 39px;
+}
+/* card styling */
+main section {
+    padding-bottom: 170px;
+}
+main section div {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 26px 34px;
+    margin-bottom: 34px;
+}
+main section div h2 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+    color: #374151;
+}
+main section div p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #6B7280;
+    margin: 12px 0 21px;
+}
+/* the add button */
+#add {
+    display: grid;
+    place-content: center;
+    width: 36px;
+    height: 36px;
+    font-size: 25px;
+    font-weight: bold;
+
+    z-index: 2;
+    position: fixed;
+    bottom: 49px;
+    left: 50%;
+    transform: translate(-50%);
+
+    border-radius: 50%;
+    border: 3px solid #E2E8F0;
+    background-color: transparent;
+    color: #E2E8F0;
+}
+#add:hover {
+    transition: all 200ms ease-in-out;
+    color: #374151;
+    border-color: #374151;
+}
+
+/*form styling  */
+form {
+    display: none;
+}
+form div {
+    background-color: aqua;
+    z-index:2;
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    width: 455px;
+}
+/* the input section in form*/
+form div:has(input){
+    height: 331px;
+    bottom: 131px;
+    padding: 41px 43px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+form div input , textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 14px;
+    outline: none;
+    border: 1px solid #F3F4F6;
+    border-radius: 4px;
+}
+form div input {
+    padding: 14px;
+    height: 44px;
+}
+form div textarea {
+    padding: 14px 14px 41px;
+    height: 70px;
+    resize: none;
+    overflow: hidden;
+}
+/* the buttons section in form */
+form div:has(button){
+    bottom: 49px;
+    text-align: center;
+    background-color:#F9FAFB;
+}
+form div button {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 3px solid #E2E8F0;
+    background-color: transparent;
+    color: #E2E8F0;
+}
+form div button:last-of-type{
+    margin-left: 12px;
+    transform: rotate(45deg) scale(-1,1);
+}
+form div button:hover {
+    transition: all 200ms ease-in-out;
+    color: #374151;
+    border-color: #374151;
+}
+/* the effect on the bottom of the page */
+.effect {
+    width: 100%;
+    height: 224px;
+    position: fixed;
+    bottom: 0;
+    /* z-index: 1; */
+    background-image: linear-gradient(180deg, rgba(249, 250, 251, 0) 0%, #F9FAFB 47.81%);
+}
