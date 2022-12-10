@@ -44,6 +44,7 @@ submit.onclick = ()=> {
         title: inputTitle.value ,
         body: inputbody.value ,
     }
+    if(inputTitle.value !== ""){
     fetch("https://jsonplaceholder.typicode.com/posts",{
         method: 'POST',
         headers: {
@@ -57,8 +58,8 @@ submit.onclick = ()=> {
         window.scroll(0 , Number.MAX_SAFE_INTEGER);
     });
     inputTitle.value = '';
-    inputbody.value = ''
-
+    inputbody.value = '';
+}
 }
 
 
