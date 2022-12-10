@@ -56,6 +56,9 @@ submit.onclick = ()=> {
         createCard(data.title , data.body)
         window.scroll(0 , Number.MAX_SAFE_INTEGER);
     });
+    inputTitle.value = '';
+    inputbody.value = ''
+
 }
 
 
