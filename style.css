@@ -80,7 +80,6 @@ form {
     display: none;
 }
 form div {
-    background-color: aqua;
     z-index:2;
     width: 100%;
     position: fixed;
@@ -93,7 +92,7 @@ form div:has(input){
     height: 331px;
     bottom: 131px;
     padding: 41px 43px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.45);
     border-radius: 8px;
     background-color: #FFFFFF;
 }
